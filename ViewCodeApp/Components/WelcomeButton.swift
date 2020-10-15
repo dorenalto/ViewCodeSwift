@@ -9,14 +9,14 @@
 import UIKit
 
 class WelcomeButton: UIButton {
-
+    
     enum Style {
         case main, secondary
     }
     
     var style: Style = .main
     var title: String = ""
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -43,6 +43,8 @@ class WelcomeButton: UIButton {
         case .secondary:
             titleColor = .secondaryButtonText
             bgColor = .secondaryButton
+            layer.borderColor = UIColor.secondaryButtonBorder.cgColor
+            layer.borderWidth = 2
         }
         
         backgroundColor = bgColor
@@ -52,5 +54,4 @@ class WelcomeButton: UIButton {
         clipsToBounds = true
         translatesAutoresizingMaskIntoConstraints = false
     }
-    
 }

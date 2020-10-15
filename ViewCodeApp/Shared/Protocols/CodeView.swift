@@ -14,7 +14,6 @@ protocol CodeView {
     func setupComponents()
     func setupConstraints()
     func setupExtraConfigurations()
-    
 }
 
 extension CodeView {

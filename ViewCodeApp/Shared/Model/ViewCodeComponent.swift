@@ -2,8 +2,8 @@
 //  ViewCodeComponent.swift
 //  ViewCodeApp
 //
-//  Created by Eric Alves Brito on 13/10/20.
-//  Copyright © 2020 FIAP. All rights reserved.
+//  Created by dorenalto on 13/10/20.
+//  Copyright © 2020 dorenalto. All rights reserved.
 //
 
 import UIKit
@@ -18,5 +18,4 @@ struct ViewCodeComponent<T: UIView> {
         self.wrappedValue = wrappedValue
         self.wrappedValue.translatesAutoresizingMaskIntoConstraints = false
     }
-    
 }
